@@ -1,0 +1,137 @@
+
+html, body {
+    margin: 0;
+    width: 100%;
+    min-height: 100%;
+}
+
+body {
+    min-height: 100vh;
+    position: relative;
+
+    background-color: black;
+    background-image: url("../images/Uvas.png");
+    background-size: auto 100vh;
+    background-position: right center;
+    background-repeat: no-repeat;
+}
+
+/* Degradado superpuesto */
+.degradado {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+
+    background: linear-gradient(
+        to right,
+        black 55%,
+        rgba(0, 0, 0, 0.8) 65%,
+        rgba(0, 0, 0, 0.4) 80%,
+        transparent 100%
+    );
+
+    z-index: 1;
+    pointer-events: none;
+}
+
+/* Encabezado */
+.encabezado {
+    position: relative;
+    z-index: 2;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    padding: 20px 45px;
+}
+
+/* Menú de navegación */
+.menu {
+    display: flex;
+    gap: 45px;
+    align-items: center;
+    padding-top: 12px;
+    flex-wrap: wrap;
+    background: transparent;
+}
+
+.menu a {
+    font-family: "Inter", sans-serif;
+    font-size: 19px;
+    color: white;
+    text-decoration: none;
+    background: transparent;
+}
+
+.menu a:hover {
+    color: #AFDC7E;
+}
+
+/* Adaptación a pantallas pequeñas */
+@media (max-width: 800px) {
+    .encabezado {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .menu {
+        padding-top: 0;
+        gap: 18px;
+    }
+}
+
+/* Logo y subtítulo */
+.marca {
+    display: inline-block;
+    text-align: center;
+}
+
+.logo {
+    display: block;
+    width: 260px;
+    height: auto;
+}
+
+.subtitulo {
+    font-family: "Great Vibes", cursive;
+    font-size: 30px;
+    font-weight: normal;
+    color: white;
+    margin: 0;
+}
+
+/* Contenedor de la frase y su autor */
+.frase {
+    position: relative;
+    z-index: 2;
+
+    display: inline-block;
+    margin: 40px 60px 0;
+}
+
+/* Texto principal en verde */
+.frase h1 {
+    font-family: "Inter", sans-serif;
+    font-size: 38px;
+    font-weight: bold;
+    color: rgb(175, 220, 126);
+
+    margin: 0;
+    padding: 0;
+}
+
+/* Nombre del autor */
+.autor {
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    color: white;
+
+    text-align: right;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+

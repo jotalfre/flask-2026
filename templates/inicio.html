@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Degustaciones en Monte</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap"
+        rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap"
+      rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/estilos.css') }}">
+</head>
+
+<body>
+    <div class="degradado"></div>
+
+
+    <header class="encabezado">
+
+        <div class="marca">
+            <img src="{{ url_for('static', filename='images/Logo.png') }}"
+                alt="DEM"
+                class="logo">
+
+            <p class="subtitulo">Degustaciones en Monte</p>
+        </div>
+
+        <nav class="menu">
+            <a href="/">Inicio</a>
+            <a href="#" onclick="return false;">Quiénes somos</a>
+            <a href="#" onclick="return false;">Catálogo</a>
+            <a href="#" onclick="return false;">Eventos</a>
+            <a href="#" onclick="return false;">Contacto</a>
+        </nav>
+
+    </header>
+
+
+    <div class="frase">
+        <h1>
+            Los verdaderos conocedores<br>
+            no beben vino, degustan<br>
+            secretos.
+        </h1>
+
+        <p class="autor">Salvador Dalí</p>
+    </div>
+    
+</body>
+</html>
+
+
