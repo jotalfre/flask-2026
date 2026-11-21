@@ -135,3 +135,45 @@ body {
     margin-bottom: 0;
 }
 
+/* Otras fotos */
+.imagen-izquierda {
+    position: fixed !important;
+    bottom: 50px !important;
+    top: auto !important;
+    left: 50px !important;
+    right: auto !important;
+
+    width: 300px !important;
+    height: auto !important;
+    max-width: 500px !important;
+
+    z-index: 1000;
+}
+
+.imagen-centroizquierda {
+    position: fixed !important;
+    bottom: 50px !important;
+    top: auto !important;
+    left: 370px !important;
+    right: auto !important;
+
+    width: 300px !important;
+    height: auto !important;
+    max-width: 500px !important;
+
+    z-index: 1000;
+}
+
+.imagen-derecha {
+    position: fixed !important;
+    bottom: 50px !important;
+    top: auto !important;
+    left: 690px !important;
+    right: auto !important;
+
+    width: 300px !important;
+    height: auto !important;
+    max-width: 500px !important;
+
+    z-index: 1000;
+}

@@ -13,14 +13,30 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
       rel="stylesheet">
 
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap"
-      rel="stylesheet">
-
     <link rel="stylesheet"
           href="{{ url_for('static', filename='css/estilos.css') }}">
 </head>
 
 <body>
+
+
+
+    <img src="{{ url_for('static', filename='images/Izq.jpg') }}"
+        alt="Imagen izquierda"
+        class="imagen-izquierda">
+
+    <img src="{{ url_for('static', filename='images/CentIzq.jpg') }}"
+        alt="Imagen Centro Izquierda"
+        class="imagen-centroizquierda">
+
+    <img src="{{ url_for('static', filename='images/Der.jpg') }}"
+        alt="Imagen derecha"
+        class="imagen-derecha">
+
+
+
+
+
     <div class="degradado"></div>
 
 
@@ -57,5 +73,4 @@
     
 </body>
 </html>
-
 
