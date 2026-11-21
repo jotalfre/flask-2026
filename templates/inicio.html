@@ -21,20 +21,6 @@
 
 
 
-    <img src="{{ url_for('static', filename='images/Izq.jpg') }}"
-        alt="Imagen izquierda"
-        class="imagen-izquierda">
-
-    <img src="{{ url_for('static', filename='images/CentIzq.jpg') }}"
-        alt="Imagen Centro Izquierda"
-        class="imagen-centroizquierda">
-
-    <img src="{{ url_for('static', filename='images/Der.jpg') }}"
-        alt="Imagen derecha"
-        class="imagen-derecha">
-
-
-
 
 
     <div class="degradado"></div>
@@ -51,7 +37,7 @@
         </div>
 
         <nav class="menu">
-            <a href="/">Inicio</a>
+            <a href="{{ url_for('degustaciones') }}">Inicio</a>
             <a href="#" onclick="return false;">Quiénes somos</a>
             <a href="#" onclick="return false;">Catálogo</a>
             <a href="#" onclick="return false;">Eventos</a>
@@ -71,6 +57,24 @@
         <p class="autor">Salvador Dalí</p>
     </div>
     
+     <div class="galeria">
+
+    <img src="{{ url_for('static', filename='images/Izq.jpg') }}"
+         alt="Imagen izquierda"
+         class="imagen-izquierda">
+
+    <img src="{{ url_for('static', filename='images/CentIzq.jpg') }}"
+         alt="Imagen centro izquierda"
+         class="imagen-centroizquierda">
+
+    <img src="{{ url_for('static', filename='images/Der.jpg') }}"
+         alt="Imagen derecha"
+         class="imagen-derecha">
+
+</div>
+
+
+
 </body>
 </html>
 
